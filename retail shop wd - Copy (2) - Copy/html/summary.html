@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../css/summary1.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsA3.html">Antidepressants</option>
+                       <option value="productsA2.html">Antibiotics</option>
+                        <option value="A1.html">Analgesics</option>
+                        <option value="A4.html">Antihistamines</option>
+                        <option value="A5.html">Antihypertensives</option>
+                    </select>
+                </li>
+               
+                <li><a href="../html/About us.html">About us</a></li>
+                <li><a href="../html/account.html">Sign in</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+
+    <h1>Order Summary</h1>
+    <table id="order-summary-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order items will be added here dynamically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="summary-total-price">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form id="details-form">
+        <h2>Enter Your Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <h3>Delivery Information</h3>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="date">Preferred Delivery Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <h3>Payment Information</h3>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+        
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="month" id="expiry-date" name="expiry-date" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+        
+        <button type="button" id="pay-button">Pay</button>
+    </form>
+    <div id="thank-you-message" style="display: none;">
+        <h2>Thank you for your purchase!</h2>
+        <p>Your order will be delivered on: <span id="delivery-date"></span></p>
+        <p>Order Summary:</p>
+        <p>Name: <span id="summary-name"></span></p>
+        <p>Address: <span id="summary-address"></span></p>
+        <p>Email: <span id="summary-email"></span></p>
+        <p>Phone: <span id="summary-phone"></span></p>
+        <p>Preferred Delivery Date: <span id="summary-preferred-date"></span></p>
+    </div>
+
+    <script src="../js/summry.js"></script>
+
+   <!---footer-->
+   <div class="main-footer">
+    <a href="../html/orderpage.html" class="order-link">Order Now</a>
+  </div>
+  <footer class="footer">
+  <section class="container">
+      <section class="grid">
+         
+          <article>
+              <img src="../images/logo.png" width="100px" alt="Logo">
+              <p>The City Hospital</p>
+              <p>@2008 Company</p>
+          </article>
+          <article>
+            
+              <ul>
+                  <li>Home</li>
+                  <li>About us</li>
+                  <li>Sign in</li>
+                
+                  
+              </ul>
+          </article>
+         <!-- Right: Contact Info and Social Icons -->
+<div class="footer-right">
+  <p>Contact Us</p>
+  <p>Email: thecityhospital@gmail.com</p>
+  <p>Phone:0812 574 693</p>
+      <div class="social-icons">
+          <a href="#"><img src="../images/facebook.png" alt="Facebook" width="10" height="20"></a>
+          <a href="#"><img src="../images/instagram.png" alt="instagram" width="10" height="20"></a>
+          <a href="#"><img src="../images/twitter.png" alt="twitter" width="10" height="20"></a>
+  </div>
+  </div>
+  </div>
+      </section>
+  </section>
+  <hr>
+  <p class="copyright">&copy; @2008 Company</p>
+</footer>
+</body>
+</html>

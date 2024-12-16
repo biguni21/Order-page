@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Registration</title>
+    <link rel="stylesheet" href="../css/about us.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+
+
+<!-- Header Section -->
+
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+           
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsA3.html">Antidepressants</option>
+                        <option value="productsA2.html">Antibiotics</option>
+                         <option value="A1.html">Analgesics</option>
+                         <option value="A4.html">Antihistamines</option>
+                         <option value="A5.html">Antihypertensives</option>
+                    </select>
+                </li>
+               
+                <li><a href="../html/About us.html">About us</a></li>
+                <li><a href="../html/account.html">Sign in</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+
+    <section>
+        <h1>Your Health, Your Savings – Order Now with Exclusive Discounts!</h1>
+    </section>
+    <section class="intro">
+        <figure>
+            <img src="../images/cartimg.jpg" width="1800px" height="500px" alt="Banner">
+        </figure>
+    </section>
+
+    <main>
+        <section class="benefits">
+            <h2>Prescription Discounts</h2>
+            <ul>
+                <li id="basic">10% off on all prescription medications.</li>
+                <li id="standard">Rs.500 off on your first prescription order.</li>
+                <li id="Premium">Free delivery on prescription orders over Rs.2500
+
+                </li>
+            </ul>
+        </section>
+       <p>At The City Hospital, we are committed to making healthcare easier and more affordable for you. Our customers enjoy exclusive discounts on a wide variety of products, including prescription medications, over-the-counter remedies, health supplements, personal care items, and wellness essentials. Whether you're managing chronic conditions, looking for seasonal remedies, or simply taking care of your everyday health needs, you’ll find everything you need at unbeatable prices.
+        <br></br>
+        
+        <br><B>Why Choose Us?</B></br>
+        <br>
+        •	Affordable Prescription Medications: We offer significant savings on both branded and generic medications, ensuring that your treatments are affordable without compromising on quality.</br>
+        <br>   •	Wide Selection of Over-the-Counter Products: From cold and flu relief to vitamins and skincare, we have everything you need to stay healthy and feel your best.</br>
+        <br>•	Fast & Reliable Delivery: Skip the long lines and wait times – order your medications and health products online and enjoy fast, discreet delivery straight to your door.</br>
+        <br> •	Customer-Focused Service: Our pharmacists are always available to offer expert advice and help you manage your medications and health concerns. Your well-being is our priority!</br>
+        <br>•	Exclusive Offers & Promotions: Take advantage of our regular sales, seasonal discounts, and bundle offers, and save more on your pharmacy purchases. Plus, our loyalty program rewards you for every purchase, helping you save even more in the long run.</br>
+        <br>Don’t wait – order now and enjoy the convenience of having your healthcare needs met from the comfort of your home, with huge savings and special offers you won't find anywhere else. At The City Hospital, we're here to help you stay healthy and save on every purchase!</br>
+        </p>
+<!---registation---->
+        <section class="registration-form">
+            <h2>Register with our special offer</h2>
+            <form action="submit_loyalty.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="prescription">Upload Prescription Image:</label>
+    <input type="file" id="prescription" name="prescription" accept="image/*" required>
+    
+
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+<!---footer-->
+<div class="main-footer">
+    <a href="../html/orderpage.html" class="order-link">Order Now</a>
+  </div>
+  <footer class="footer">
+  <section class="container">
+      <section class="grid">
+         
+          <article>
+              <img src="../images/logo.png" width="100px" alt="Logo">
+              <p>The City Hospital</p>
+              <p>@2008 Company</p>
+          </article>
+          <article>
+            
+              <ul>
+                  <li>Home</li>
+                  <li>About us</li>
+                  <li>Sign in</li>
+                
+                  
+              </ul>
+          </article>
+         <!-- Right: Contact Info and Social Icons -->
+<div class="footer-right">
+  <p>Contact Us</p>
+  <p>Email: thecityhospital@gmail.com</p>
+  <p>Phone:0812 574 693</p>
+      <div class="social-icons">
+          <a href="#"><img src="../images/facebook.png" alt="Facebook"  height="20" width="10" ></a>
+          <a href="#"><img src="../images/instagram.png" alt="instagram" width="10" height="20" ></a>
+          <a href="#"><img src="../images/twitter.png" alt="twitter" width="10" height="20" ></a>
+  </div>
+  </div>
+  </div>
+      </section>
+  </section>
+  <hr>
+  <p class="copyright">&copy; @2008 Company</p>
+</footer>
+</body>
+</html>

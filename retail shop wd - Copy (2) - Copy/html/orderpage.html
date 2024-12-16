@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../css/Items.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+              
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsA3.html">Antidepressants</option>
+                       <option value="productsA2.html">Antibiotics</option>
+                        <option value="A1.html">Analgesics</option>
+                        <option value="A4.html">Antihistamines</option>
+                        <option value="A5.html">Antihypertensives</option>
+                    </select>
+                </li>
+                
+                <li><a href="../html/About us.html">About us</a></li>
+                <li><a href="../html/account.html">Sign in</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+    <h1>Order Groceries</h1>
+    <form id="grocery-form">
+        <!-- Analgesics section-->
+        <section>
+            <h2>Analgesics</h2>
+            <div class="item">
+                <img src="../images/1.1.jpeg" alt="Paracetamol">
+                <label for="Paracetamol">Apple (Rs.350.00):</label>
+                <input type="number" id="Paracetamol" name="Paracetamol" min="0" >
+                <button type="button" class="add-button" data-item="Paracetamol">Add</button>
+            </div>
+           
+            <div class="item">
+                <img src="../images/1.2.jpeg" alt="Ibuprofen">
+                <label for="Ibuprofen">Ibuprofen(Rs.200.00):</label>
+                <input type="number" id="Ibuprofen" name="Ibuprofen" min="0" >
+                <button type="button" class="add-button" data-item="Ibuprofen">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/1.3.jpeg" alt="Aspirin">
+                <label for="Aspirin">Aspirin(Rs.400.00):</label>
+                <input type="number" id="Aspirin" name="Aspirin" min="0" >
+                <button type="button" class="add-button" data-item="Aspirin">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/1.4.jpeg" alt="Naproxen">
+                <label for="Naproxen">Naproxen(Rs.100.00):</label>
+                <input type="number" id="Naproxen" name="Naproxen" min="0" >
+                <button type="button" class="add-button" data-item="melon">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/1.5.jpg" alt="Codeine">
+                <label for="Codeine">Codeine (Rs.500.00):</label>
+                <input type="number" id="Codeine" name="Codeine" min="0" >
+                <button type="button" class="add-button" data-item="Codeine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/1.5.jpg" alt="Morphine">
+                <label for="Morphine">Morphine (Rs.300.00):</label>
+                <input type="number" id="Morphine" name="Morphine" min="0" >
+                <button type="button" class="add-button" data-item="Morphine">Add</button>
+            </div>
+            <!--Antibiotics section -->
+        </section>
+        <section>
+            <h2>Antibiotics</h2>
+            <div class="item">
+                <img src="../images/2.1.jpg" alt="Amoxicillin">
+                <label for="Amoxicillin">Amoxicillin (R.200.00):</label>
+                <input type="number" id="Amoxicillin" name="Amoxicillin" min="0" >
+                <button type="button" class="add-button" data-item="Amoxicillin">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/2.2.jpg" alt="Penicillin">
+                <label for="Penicillin">Penicillin(Rs.300.00):</label>
+                <input type="number" id="Penicillin" name="Penicillin" min="0" >
+                <button type="button" class="add-button" data-item="Penicillin">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/2.3.jpg" alt="Ciprofloxacin">
+                <label for="Ciprofloxacin"> Ciprofloxacin(Rs.400.00):</label>
+                <input type="number" id="Ciprofloxacin" name="Ciprofloxacin" min="0" >
+                <button type="button" class="add-button" data-item="Ciprofloxacin">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/2.4.jpg" alt="Azithromycin">
+                <label for="Azithromycin">Azithromycin (Rs.500.00):</label>
+                <input type="number" id="Azithromycin" name="Azithromycin" min="0">
+                <button type="button" class="add-button" data-item="Azithromycin">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/2.5.jpg" alt="Doxycycline">
+                <label for="Doxycycline">Doxycycline (Rs.600.00):</label>
+                <input type="number" id="Doxycycline" name="Doxycycline" min="0" >
+                <button type="button" class="add-button" data-item="Doxycycline">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/2.6.webp" alt="Clindamycin">
+                <label for="Clindamycin">Clindamycin (Rs.150.00):</label>
+                <input type="number" id="Clindamycin" name="Clindamycin" min="0" >
+                <button type="button" class="add-button" data-item="Clindamycin">Add</button>
+            </div>
+           
+            <!-- Antidepressants Section -->
+        </section>
+        <section>
+            <h2>Antidepressants</h2>
+            <div class="item">
+                <img src="../images/3.1.jpg" alt="Fluoxetine">
+                <label for="Fluoxetine">Fluoxetine(Rs.250.00):</label>
+                <input type="number" id="Fluoxetine" name="Fluoxetine" min="0">
+                <button type="button" class="add-button" data-item="Fluoxetine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/3.2.jpg" alt="Sertraline">
+                <label for="Sertraline">Sertraline (Rs.200.00):</label>
+                <input type="number" id="Sertraline" name="Sertraline" min="0">
+                <button type="button" class="add-button" data-item="Sertraline">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/3.3.jpg" alt="Citalopram">
+                <label for="Citalopram">Citalopram (Rs.150.00):</label>
+                <input type="number" id="Citalopram" name="Citalopram" min="0">
+                <button type="button" class="add-button" data-item="Citalopram">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/3.4.jpg" alt="Escitalopram">
+                <label for="Escitalopram">Escitalopram (Rs.100.00):</label>
+                <input type="number" id="Escitalopram" name="Escitalopram" min="0" >
+                <button type="button" class="add-button" data-item="Escitalopram">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/3.5.jpg" alt="Venlafaxine">
+                <label for="Venlafaxine">Venlafaxine (Rs.200.00):</label>
+                <input type="number" id="Venlafaxine" name="Venlafaxine" min="0" >
+                <button type="button" class="add-button" data-item="Venlafaxine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/3.6.jpg" alt="Duloxetine">
+                <label for="Duloxetine">Duloxetine (Rs.200.00):</label>
+                <input type="number" id="Duloxetine" name="Duloxetine" min="0" >
+                <button type="button" class="add-button" data-item="Duloxetine">Add</button>
+            </div>
+            <!--Antihistamines Section  -->
+        </section>
+        <section>
+            <h2>Antihistamines </h2>
+            <div class="item">
+                <img src="../images/4.1.jpg" alt="Benadry">
+                <label for="Benadry">Benadry (Rs.155.00):</label>
+                <input type="number" id="Benadry" name="Benadry" min="0" >
+                <button type="button" class="add-button" data-item="Benadry">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/4.2.jpg" alt="Loratadine">
+                <label for="Loratadine">Loratadine (Rs.170.00):</label>
+                <input type="number" id="Loratadine" name="Loratadine" min="0" >
+                <button type="button" class="add-button" data-item="Loratadine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/4.3.jpg" alt="Cetirizine">
+                <label for="Cetirizine">Cetirizine(Rs.300.00):</label>
+                <input type="number" id="Cetirizine" name="Cetirizine" min="0" >
+                <button type="button" class="add-button" data-item="Cetirizine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/4.4.jpg" alt="Fexofenadine">
+                <label for="Fexofenadine">Fexofenadine (Rs.250.00):</label>
+                <input type="number" id="Fexofenadine" name="Fexofenadine" min="0" >
+                <button type="button" class="add-button" data-item="Fexofenadine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/4.5.jpg" alt="Chlorpheniramine">
+                <label for="Chlorpheniramine">Chlorpheniramine (Rs.480.00):</label>
+                <input type="number" id="Chlorpheniramine" name="Chlorpheniramine" min="0" >
+                <button type="button" class="add-button" data-item="Chlorpheniramine">Add</button>
+            </div>
+
+            <div class="item">
+                <img src="../images/4.6.jpg" alt="Desloratadine">
+                <label for="Desloratadine">Desloratadine(Rs.480.00):</label>
+                <input type="number" id="Desloratadine" name="Desloratadine" min="0" >
+                <button type="button" class="add-button" data-item="Desloratadine">Add</button>
+            </div>
+            <!--Antihypertensives Section  -->
+        </section>
+        <section>
+            <h2>Antihypertensives</h2>
+            <div class="item">
+                <img src="../images/5.1.jpg" alt="Lisinopril">
+                <label for="Lisinopril">Lisinopril (Rs.250.00):</label>
+                <input type="number" id="Lisinopril" name="Lisinopril" min="0">
+                <button type="button" class="add-button" data-item="Lisinopril">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/5.2.jpg" alt="Amlodipine">
+                <label for="Amlodipine">Amlodipine (Rs.200.00):</label>
+                <input type="number" id="Amlodipine" name="Amlodipine" min="0">
+                <button type="button" class="add-button" data-item="Amlodipine">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/5.3.jpg" alt="Losartan">
+                <label for="Losartan">Losartan (Rs.200.00):</label>
+                <input type="number" id="Losartan" name="Losartan" min="0">
+                <button type="button" class="add-button" data-item="Losartan">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/5.4.jpg" alt="Metoprolol">
+                <label for="Metoprolol">Metoprolol (Rs.200.00):</label>
+                <input type="number" id="Metoprolol" name="Metoprolol" min="0" step="1">
+                <button type="button" class="add-button" data-item="Metoprolol">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/5.5.jpg" alt="Hydrochlorothiazide">
+                <label for="Hydrochlorothiazide">Hydrochlorothiazide(Rs.100.00):</label>
+                <input type="number" id="Hydrochlorothiazide" name="Hydrochlorothiazide" min="0" step="1">
+                <button type="button" class="add-button" data-item="Hydrochlorothiazide">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/5.6.jpg" alt="Enalapril">
+                <label for="Enalapril">Enalapril (Rs.150.00):</label>
+                <input type="number" id="Enalapril" name="Enalapril" min="0" step="1">
+                <button type="button" class="add-button" data-item="Enalapril">Add</button>
+            </div>
+            <!-- Add more here -->
+        </section>
+        <button type="button" id="add-to-favourites">Add to Favourites</button>
+        <button type="button" id="apply-favourites">Apply Favourites</button>
+        <button type="button" id="clear-favourites">Clear Favourites</button>
+        <button type="button" id="buy-now">Buy Now</button>
+        
+    </form>
+    <h2>Your Order</h2>
+    <table id="order-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order items will be added here dynamically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total-price">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="../js/main.js"></script>
+
+    <!---footer-->
+    <div class="main-footer">
+       
+      </div>
+      <footer class="footer">
+      <section class="container">
+          <section class="grid">
+             
+              <article>
+                  <img src="../images/logo.png" width="100px" alt="Logo">
+                  <p>The City Hospital</p>
+                  <p>@2008 Company</p>
+              </article>
+              <article>
+                
+                  <ul>
+                      <li>Home</li>
+                      <li>About us</li>
+                      <li>Sign in</li>
+                    
+                      
+                  </ul>
+              </article>
+             <!-- Right: Contact Info and Social Icons -->
+  <div class="footer-right">
+      <p>Contact Us</p>
+      <p>Email: thecityhospital@gmail.com</p>
+      <p>Phone:0812 574 693</p>
+          <div class="social-icons">
+              <a href="#"><img src="../images/facebook.png" alt="Facebook" width="10" height="20"></a>
+              <a href="#"><img src="../images/instagram.png" alt="instagram" width="10" height="20"></a>
+              <a href="#"><img src="../images/twitter.png" alt="twitter" width="10" height="20"></a>
+      </div>
+      </div>
+      </div>
+          </section>
+      </section>
+      <hr>
+      <p class="copyright">&copy; @2008 Company</p>
+  </footer>
+  </body>
+  </html>
+  

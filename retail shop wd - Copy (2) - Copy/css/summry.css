@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+#details-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#details-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#details-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#pay-button {
+    background-color: #078dac;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pay-button:hover {
+    background-color: #078dac;
+}
+
+#thank-you-message {
+    background-color: #dff0d8;
+    padding: 20px;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+}
+
+#thank-you-message h2 {
+    color: #078dac;
+}
